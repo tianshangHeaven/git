@@ -1,13 +1,18 @@
-#include<Windows.h>
-
-#include<stdio.h>
-
+ï»¿#include<stdio.h>
+int plus(int x, int y) {
+	return x + y;
+}
 int main()
 {
-	printf("git study up code\n");
-	getchar();
-	MessageBoxA(0, "ÎÒÖ»ÊÇÒª²âÊÔÏÂgit", "à»à»à»à»", 0);
-	getchar();
-	MessageBoxA(0, "ÊµÑéDevelopment·ÖÖ§", "¾ÍÊÇ´°¿ÚÌ«Ğ¡ÁË", 4);
+	__asm
+	{
+		mov eax, eax
+	}
+	plus(1, 2);
+	//	getchar();
+	//	printf("ÂµÃšÃ’Â»Â¿Ã\n");
+	//	getchar();
 	return 0;
+
+
 }
